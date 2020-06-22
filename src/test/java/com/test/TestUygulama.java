@@ -21,7 +21,7 @@ public class TestUygulama {
 
     public void loginPageControl() {
         Assert.assertTrue(tp.getTitle().equals("En Trend Ürünler Türkiye'nin Online Alışveriş Sitesi Trendyol'da"));
-        System.out.println("Web Sitesi Açıldı ...");
+        System.out.println("Web Sitesi Açıldı.");
         tp.clickElement(By.cssSelector("div.fancybox-overlay.fancybox-overlay-fixed > div > div > a"));
         tp.clickElement(By.id("accountBtn"));
         tp.sendKeys(By.id("email"),"dnz.testapplication@gmail.com");
